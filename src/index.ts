@@ -1,6 +1,4 @@
-/**
- * reading-time-estimator
- * Fast, zero-dependency reading time calculator for Node.js and browser environments.
- */
-
-export const VERSION = '1.0.0';
+export * from './types';
+export * from './constants';
+export * from './core/wordCounter';
+export * from './core/calculator';
