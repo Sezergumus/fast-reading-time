@@ -1,0 +1,65 @@
+{
+  "name": "reading-time-estimator",
+  "version": "1.0.0",
+  "description": "A fast, zero-dependency, dual-format (ESM & CJS) reading time estimator with Markdown/HTML stripping, CJK support, and multi-language localization.",
+  "author": "Sezer Gümüş",
+  "license": "MIT",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "reading-time",
+    "reading-time-estimator",
+    "reading-speed",
+    "word-count",
+    "cjk",
+    "markdown-stripper",
+    "html-stripper",
+    "i18n",
+    "time-to-read",
+    "article-reading-time",
+    "zero-dependency",
+    "esm",
+    "cjs",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sezer2004/reading-time-estimator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sezer2004/reading-time-estimator/issues"
+  },
+  "homepage": "https://github.com/sezer2004/reading-time-estimator#readme",
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "@vitest/coverage-v8": "^3.0.7",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2",
+    "vitest": "^3.0.7"
+  }
+}
