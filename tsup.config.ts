@@ -9,6 +9,7 @@ export default defineConfig({
   treeshake: true,
   minify: false,
   splitting: false,
+  cjsInterop: true,
   outExtension({ format }) {
     return {
       js: format === 'cjs' ? '.cjs' : '.js',
