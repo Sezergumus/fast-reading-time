@@ -298,4 +298,4 @@ console.log(getSupportedLocales());
 
 ## License
 
-MIT © [Sezer Gümüş](LICENSE)
+MIT © [Sezer Gümüş](https://github.com/sezer2004)

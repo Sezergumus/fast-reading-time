@@ -2,7 +2,7 @@
   "name": "fast-reading-time",
   "version": "1.0.0",
   "description": "A fast, zero-dependency, dual-format (ESM & CJS) reading time estimator with Markdown/HTML stripping, CJK support, and multi-language localization.",
-  "author": "Sezer Gümüş",
+  "author": "Sezer Gümüş <sezer2004@gmail.com> (https://github.com/sezer2004)",
   "license": "MIT",
   "type": "module",
   "main": "./dist/index.cjs",
