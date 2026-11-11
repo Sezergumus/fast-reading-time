@@ -1,5 +1,5 @@
 {
-  "name": "reading-time-estimator",
+  "name": "fast-reading-time",
   "version": "1.0.0",
   "description": "A fast, zero-dependency, dual-format (ESM & CJS) reading time estimator with Markdown/HTML stripping, CJK support, and multi-language localization.",
   "author": "Sezer Gümüş",
@@ -55,12 +55,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sezer2004/reading-time-estimator.git"
+    "url": "git+https://github.com/sezer2004/fast-reading-time.git"
   },
   "bugs": {
-    "url": "https://github.com/sezer2004/reading-time-estimator/issues"
+    "url": "https://github.com/sezer2004/fast-reading-time/issues"
   },
-  "homepage": "https://github.com/sezer2004/reading-time-estimator#readme",
+  "homepage": "https://github.com/sezer2004/fast-reading-time#readme",
   "devDependencies": {
     "@types/node": "^22.13.9",
     "@vitest/coverage-v8": "^3.0.7",

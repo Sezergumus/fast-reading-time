@@ -1,9 +1,9 @@
-# reading-time-estimator
+# fast-reading-time
 
-[![npm version](https://img.shields.io/npm/v/reading-time-estimator.svg?style=flat-square)](https://www.npmjs.com/package/reading-time-estimator)
-[![license](https://img.shields.io/npm/l/reading-time-estimator.svg?style=flat-square)](LICENSE)
-[![bundle size](https://img.shields.io/bundlephobia/minzip/reading-time-estimator?style=flat-square)](https://bundlephobia.com/package/reading-time-estimator)
-[![build](https://img.shields.io/github/actions/workflow/status/sezer2004/reading-time-estimator/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/sezer2004/reading-time-estimator)
+[![npm version](https://img.shields.io/npm/v/fast-reading-time.svg?style=flat-square)](https://www.npmjs.com/package/fast-reading-time)
+[![license](https://img.shields.io/npm/l/fast-reading-time.svg?style=flat-square)](LICENSE)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/fast-reading-time?style=flat-square)](https://bundlephobia.com/package/fast-reading-time)
+[![build](https://img.shields.io/github/actions/workflow/status/sezer2004/fast-reading-time/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/sezer2004/fast-reading-time)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg?style=flat-square)](package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square)](tsconfig.json)
 
@@ -30,16 +30,16 @@ Features automatic **Markdown** & **HTML** stripping, **CJK** (Chinese, Japanese
 
 ```bash
 # npm
-npm install reading-time-estimator
+npm install fast-reading-time
 
 # pnpm
-pnpm add reading-time-estimator
+pnpm add fast-reading-time
 
 # yarn
-yarn add reading-time-estimator
+yarn add fast-reading-time
 
 # bun
-bun add reading-time-estimator
+bun add fast-reading-time
 ```
 
 ---
@@ -49,7 +49,7 @@ bun add reading-time-estimator
 ### ESM (TypeScript / JavaScript)
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 const article = `
 # Getting Started with TypeScript
@@ -73,7 +73,7 @@ console.log(stats);
 ### CommonJS
 
 ```javascript
-const { readingTime } = require('reading-time-estimator');
+const { readingTime } = require('fast-reading-time');
 
 const stats = readingTime('A quick brown fox jumps over the lazy dog.');
 console.log(stats.text); // "< 1 min read"
@@ -126,7 +126,7 @@ Calculates reading time metrics for the given input text.
 Code blocks, frontmatter, images, and HTML boilerplate are stripped automatically:
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 const markdownContent = `
 ---
@@ -155,10 +155,10 @@ console.log(result.words); // Counts only actual prose words
 
 ### Multi-Language Localization
 
-`reading-time-estimator` comes with built-in dictionaries for popular languages:
+`fast-reading-time` comes with built-in dictionaries for popular languages:
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 const text = "Your long article text...";
 
@@ -190,7 +190,7 @@ readingTime(text, { language: 'ja' }).text; // "5分で読めます" / "1分未�
 ### Compact and Raw Formats
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 // Compact format
 readingTime(text, { format: 'compact' }).text; // "5m" or "< 1m"
@@ -205,7 +205,7 @@ readingTime(text, { format: 'raw' }).text; // "5"
 You can supply your own formatting logic:
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 const result = readingTime(text, {
   customFormatter: ({ minutes, words }) => `~${minutes} min (${words} words)`,
@@ -219,7 +219,7 @@ console.log(result.text); // "~2.5 min (500 words)"
 Add or customize languages dynamically:
 
 ```typescript
-import { readingTime, registerLocale } from 'reading-time-estimator';
+import { readingTime, registerLocale } from 'fast-reading-time';
 
 registerLocale('sv', {
   human: {
@@ -243,7 +243,7 @@ console.log(result.text); // "5 min lästid"
 Non-spaced scripts are automatically detected and calculated using character-per-minute (~400 CPM) speeds:
 
 ```typescript
-import { readingTime } from 'reading-time-estimator';
+import { readingTime } from 'fast-reading-time';
 
 // Pure Chinese/Japanese
 const chinese = "你好，世界！这是一篇中文文章。";
@@ -270,7 +270,7 @@ import {
   calculateReadingTime,
   formatReadingTime,
   getSupportedLocales,
-} from 'reading-time-estimator';
+} from 'fast-reading-time';
 
 // Clean markdown syntax
 const prose = stripMarkdown('# Hello **World**'); // "Hello World"
