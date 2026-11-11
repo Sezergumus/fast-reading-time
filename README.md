@@ -3,7 +3,7 @@
 [![npm version](https://img.shields.io/npm/v/fast-reading-time.svg?style=flat-square)](https://www.npmjs.com/package/fast-reading-time)
 [![license](https://img.shields.io/npm/l/fast-reading-time.svg?style=flat-square)](LICENSE)
 [![bundle size](https://img.shields.io/bundlephobia/minzip/fast-reading-time?style=flat-square)](https://bundlephobia.com/package/fast-reading-time)
-[![build](https://img.shields.io/github/actions/workflow/status/sezer2004/fast-reading-time/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/Sezergumus/fast-reading-time)
+[![build](https://img.shields.io/github/actions/workflow/status/Sezergumus/fast-reading-time/ci.yml?branch=main&style=flat-square&label=tests)](https://github.com/Sezergumus/fast-reading-time)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg?style=flat-square)](package.json)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg?style=flat-square)](tsconfig.json)
 
